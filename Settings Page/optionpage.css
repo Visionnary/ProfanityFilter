@@ -1,0 +1,148 @@
+/* class colors used:
+w3-red
+w3-flat-peter-river
+w3-border-grey
+w3-flat-silver
+w3-flat-pomegranate */
+
+/* #region Themes */
+:root {
+    color-scheme: light dark; /* both themes supported */
+  }
+  
+  /* Variables */
+  html {
+    --blue-darker: #2c3e50; /* midnight-blue */
+    --blue: #2980b9; /* belize-hole */
+    --dark-dark: #121212;
+    --dark-light: #202020;
+    --dark-text: #fff;
+    --green: #16a085; /* green-sea */
+    --light-dark: #f1f1f1; /* w3-light-grey */
+    --light-light: #eee;
+    --light-text: #000;
+    --silver: #bdc3c7;
+  }
+  /* #endregion */
+  
+  /* #region HTML Elements */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  div#page {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  div.w3-modal > div {
+    background-color: var(--background-color);
+  }
+  
+  a:hover {
+    color: var(--blue);
+  }
+  
+  h4.sectionHeader {
+    color: var(--blue);
+  }
+  
+  /* General */
+  .textInput {
+    height: 40px;
+  }
+  /* #endregion */
+  
+  /* #region Header */
+  #header {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-top: 4px;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  
+  #header span.title {
+    font-size: 28px;
+    vertical-align: middle;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+  /* #endregion */
+  
+  /* #region Navigation */
+  #menu {
+    height: 40px;
+    line-height: 24px;
+  }
+  
+  #menu > a:hover, #menu > div:hover {
+    color: #fff !important;
+    background-color: var(--blue) !important;
+  }
+  
+  div.themes > div {
+    width: 18px;
+    margin-top: 3px;
+  }
+  
+  div.themes div.sun {
+    color: orange;
+  }
+  /* #endregion */
+  
+  /* #region Pages */
+  #main {
+    padding-bottom: 16px;
+  }
+  
+ 
+  
+
+  
+
+  /* #endregion */
+  
+  /* #region Modals */
+
+  
+  #bulkWordEditorModal table td {
+    /* For cells, apply the border to one of each side only (right but not left, bottom but not top) */
+    border-bottom: 1px solid;
+  }
+  /* #endregion */
+  
+  
+  /* #region Utility */
+  .disabled {
+    cursor: not-allowed !important;
+  }
+  
+  .extraSmallInput {
+    width: 70px;
+    text-align: right;
+  }
+  
+  .notes {
+    margin-left: 16px;
+    padding-top: 5px;
+    font-size: 10px;
+    color: gray;
+  }
+  
+  .small {
+    width: 300px;
+  }
+  
+  /* #endregion */
+  
+  /* #region Uncaught Errors */
+  #uncaughtErrors P {
+    color: red;
+  }
+  
+  #uncaughtErrors P:first-child {
+    font-weight: bolder;
+  }
+  /* #endregion */
