@@ -1,21 +1,21 @@
 function firstlast(word){
-    var filter = new Array();
-    var txtfile= "words.txt";
-    var file = new File(txtfile);
-    while (!file.eof){
-        filter.push(file.readIn());
+    const fs = require('fs');
+    var filter = [];
+    var content = fs.readFileSync("./words.txt").toString().split("\n");
+    for (i in content){
+        filter.push(content[i]);
     }
-    document.write(filter);
-    for (let i=0; i<filter.length(); i++){
-          if (word == list[i]){
-              word=list[0];
-              for (let x=0; x<list[x].length()-1; x++){
+    console.log(filter);
+    for (let i=0; i<filter.length; i++){
+          if (word.toLowerCase == filter[i]){
+              word=filter[i][0];
+              for (let x=0; x<filter[i].length-1; x++){
                   word+="*";
               }
-            word+=list[-1];
+            word+=filter[i][filter[i].length];
           }  
+          console.log(i);
     }
-    document.write(word);
+    return word;
 }
-
-document.write(firstlast("net"));
+console.log(firstlast("woman"));
