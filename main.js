@@ -34,8 +34,8 @@ function lengthCounter(length){
 }
 
 
-chrome.storage.sync.get(['mode'], function(data) {
-  replaceText(['to'],data.mode);
-});
+replaceText(['to'], 1);
+ 
+
 
 
