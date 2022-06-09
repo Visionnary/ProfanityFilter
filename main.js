@@ -5,7 +5,7 @@ var profanity=                                                                  
                                                                                                                                                                                                                                                                                                       "raghead","raging boner","rape","raping","rapist","rectum","reverse cowgirl","rimjob","rimming","rosy palm","rosy palm and her 5 sisters","rusty trombone","s&m","scat","schlong","scissoring","semen","sex","sexo","sexy","shaved beaver","shaved pussy","shemale","shibari","shit",
                                                                                                                                                                                                                                                                                                         "shota","shrimping","slanteye","slut","smut","snatch","snowballing","sodomize","sodomy","spic","spooge","spread legs","strap on","strapon","strappado","strip club","style doggy","suicide girls","sultry women","swastika","swinger","tainted love","taste my","tea bagging",
                                                                                                                                                                                                                                                                                                             "threesome","throating","tied up","tight white","tit","tits","titties","titty","tongue in a","topless","tosser","towelhead","tranny","tribadism","tub girl","tubgirl","tushy","twat","twink","twinkie","two girls one cup","undressing","upskirt","urethra play","urophilia","vagina","venus mound",
-                                                                                                                                                                                                                                                                                                                        "vibrator","violet wand","vorarephilia","voyeur","wank","wet dream","wetback","white power","wrapping men","wrinkled starfish","xx","xxx","yaoi","yellow showers","yiffy","zoophilia"]
+                                                                                                                                                                                                                                                                                                                        "vibrator","violet wand","vorarephilia","voyeur","wank","wet dream","wetback","white power","wrapping men","wrinkled starfish","xx","xxx","yaoi","yellow showers","yiffy","zoophilia","to"]
 
 function replaceText(replacements, mode) {
   console.log(mode);
@@ -34,7 +34,7 @@ function lengthCounter(length){
 
 
 chrome.storage.sync.get(['mode'], function(data) {
-  replaceText(['to'],data.mode);
+  replaceText(profanity,data.mode);
 });
 
 
