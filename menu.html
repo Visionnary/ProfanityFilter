@@ -3,42 +3,55 @@
 
 <head>
   <meta charset="utf-8" />
+  <style>
+    h1 {
+      padding: 0px;
+      text-align: left;
+      font-size: 35px;
+      margin: 0px 0px 0px -40px;
+      color: black;
+    }
+  </style>
   <link rel="stylesheet" type="text/css" href="popup.css" />
   <style>
+
     .button {
       border: none;
       color: white;
-      padding: 15px 32px;
-      text-align: center;
+      padding: 15px 32px ;
+      text-align: left;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
     }
+
     .button2 {
       border: none;
       color: red;
       padding: 15px 32px;
-      text-align: center;
+      text-align: left;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
     }
-    
-    .button1 {background-color: #4CAF50;} /* Green */
-    </style>
+
+    .button1 {
+      background-color: #4CAF50;
+    }
+
+  </style>
 </head>
 
 <body tabindex="1" class="w3-card">
   <img id="logo" src="icons/image-48.png" />
+  <h1>Profanity Filter</h1>
   <button id="all" class="button button1">On</button>
   <button id="off" class="button button2">Off</button>
   <div class="divider"></div>
-  <div class="divider"></div>
-
 
   <div id="footer">
     <a id="gettingStarted" href="https://github.com/Visionnary/ProfanityFilter/wiki" target="_blank">Help</a>
