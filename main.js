@@ -1,4 +1,3 @@
-//Finds word inside of text node and replaces with new version
 var profanity=                                                                                                                                                                                                                                                                                    ["2g1c","2 girls 1 cup","acrotomophilia","anal","anilingus","anus","arsehole","ass","asshole","assmunch","auto erotic","autoerotic","babeland","baby batter","ball gag","ball gravy","ball kicking","ball licking","ball sack","ball sucking","bangbros","bareback","barely legal","barenaked","bastardo","bastinado","bbw","bdsm","beaver cleaver","beaver lips","bestiality","bi curious","big breasts","big knockers","big tits","bimbos","birdlock","bitch","black cock","blonde action","blonde on blonde action","blow j","blow your l","blue waffle","blumpkin","bollocks","bondage","boner","boob","boobs","booty call","brown showers","brunette action","bulldyke","bullet vibe","bung hole","bunghole","busty","butt","buttcheeks","butthole","camel toe","camslut","camwhore","carpet muncher","carpetmuncher","chocolate rosebuds","circlejerk","cleveland steamer","clit","clitoris","clover clamps","clusterfuck","cock","cocks","coprolagnia","coprophilia","cornhole","cum","cumming","cunnilingus","cunt","darkie","date rape","daterape","deep throat","deepthroat","dick","dildo","dirty pillows","dirty sanchez","doggie style","doggiestyle","doggy style","doggystyle","dolcett","domination","dominatrix","donkey punch","double dong","double penetration","dp action","eat my ass","ejaculation","erotic","erotism","escort","ethical slut","eunuch","faggot","fecal","felch","fellatio","feltch","female squirting","femdom","figging","fingering","fisting","foot fetish","footjob","frotting","fuck","fuck buttons","fudge packer","fudgepacker","futanari","g-spot","gang bang","gay sex","genitals","giant cock","girl on","girl on top","girls gone wild","goatcx","goatse","gokkun","golden shower","goo girl","goodpoop","goregasm","grope","group sex","guro","hand job","handjob","hard core","hardcore","hentai","homoerotic","honkey","hooker","hot chick","how to kill","how to murder","huge fat","humping","incest","intercourse","jack off","jail bait","jailbait","jerk off","jigaboo",
                                                                                                                                                                                                                                                                                                           "jiggaboo","jiggerboo","jizz","juggs","kike","kinbaku","kinkster","kinky","knobbing","leather restraint","leather straight jacket","lemon party","lolita","lovemaking","make me come","male squirting","masturbate","menage a trois","milf","missionary position","motherfucker","mound of venus",
                                                                                                                                                                                                                                                                                                           "mr hands","muff diver","muffdiving","nambla","nawashi","negro","neonazi","nig nog","nigga","nigger","nimphomania","nipple","nipples","nsfw images","nude","nudity","nympho","nymphomania","octopussy","omorashi","one cup two girls","one guy one jar","orgasm","orgy","paedophile","panties",
@@ -10,7 +9,7 @@ var profanity=                                                                  
 
 function replaceText(replacements, mode) {
   console.log(mode);
-  if (mode==0){
+  if (mode=="0"){
     console.log("Filter is Off");
     return;
   }
@@ -34,8 +33,8 @@ function lengthCounter(length){
 }
 
 
-replaceText(['to'], 1);
- 
-
+chrome.storage.sync.get(['mode'], function(data) {
+  replaceText(['to'],data.mode);
+});
 
 
